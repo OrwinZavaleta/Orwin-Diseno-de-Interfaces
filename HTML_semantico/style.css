@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+header,
+footer {
+  background-color: rgb(47, 46, 46);
+  color: white;
+}
+header {
+  margin-bottom: 1rem;
+  padding: 0.1rem 0;
+}
+footer {
+  position: fixed;
+  padding: 0.3rem 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.contenedor {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+td,
+th,
+table {
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+}
+th {
+  padding: 0.5rem 0;
+}
+
+td {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+.col5 {
+  width: 41.67%;
+}
+.col2 {
+  width: 16.67%;
+}
+.width100 {
+  width: 100%;
+}
+.boton {
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin: 0.2rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.boton-rojo {
+  background-color: red;
+  border-color: red;
+}
+.boton-rojo:hover {
+  background-color: rgb(218, 3, 3);
+  border-color: rgb(218, 3, 3);
+}
+.boton-amarillo {
+  background-color: yellow;
+  border-color: yellow;
+}
+.boton-amarillo:hover {
+  background-color: rgb(218, 218, 0);
+  border-color: rgb(218, 218, 1);
+}
+.boton-azul {
+  background-color: blue;
+  border-color: blue;
+  color: white;
+  font-weight: bold;
+}
+.boton-azul:hover {
+  background-color: rgb(2, 2, 212);
+  border-color: rgb(2, 2, 212);
+}
+
+.flex {
+  display: flex;
+  column-gap: 0.75rem;
+}
+form > .boton {
+  align-self: flex-end;
+}
+.f-columna {
+  flex-direction: column;
+}
+.items-left {
+  align-items: start;
+}
+
+.form-label {
+  margin-bottom: 0.7rem;
+  font-size: 1.15rem;
+}
+
+.form-input,
+.form-select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.548);
+}
+
+.form-select {
+  background-color: transparent;
+}

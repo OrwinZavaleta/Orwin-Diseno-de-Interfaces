@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mac</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="contenedor">
+            <h1>Nombre de la empresa</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="contenedor">
+            <form action="#" method="post" class="flex">
+                <div class="flex f-columna items-start col5 width100">
+                    <label for="mac" class="form-label">Ingrese su MAC</label>
+                    <input type="text" name="mac" id="mac" class="form-input">
+                </div>
+
+                <div class="flex f-columna items-start col5 width100">
+                    <label for="ciclo" class="form-label">Seleccione su ciclo</label>
+                    <select name="ciclo" id="ciclo" class="form-select">
+                        <option value="daw1">DAW 1</option>
+                        <option value="daw2">DAW 2</option>
+                        <option value="dam1">DAM 1</option>
+                        <option value="dam2">DAM 2</option>
+                    </select>
+                </div>
+                <input type="button" value="Enviar" class="boton boton-azul col2">
+            </form>
+        </div>
+        <table class="contenedor">
+            <thead>
+                <tr>
+                    <th>MAC</th>
+                    <th>Ciclo</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>14:D4:24:23:6D:42</td>
+                    <td>DAW 1</td>
+                    <td><button type="button" class="boton boton-amarillo">✏️</button></td>
+                    <td><button type="button" class="boton boton-rojo">🗑️</button></td>
+                </tr>
+                <tr>
+                    <td>14:D4:24:23:6D:42</td>
+                    <td>DAM 1</td>
+                    <td><button type="button" class="boton boton-amarillo">✏️</button></td>
+                    <td><button type="button" class="boton boton-rojo">🗑️</button></td>
+                </tr>
+                <tr>
+                    <td>14:D4:24:23:6D:42</td>
+                    <td>DAW 2</td>
+                    <td><button type="button" class="boton boton-amarillo">✏️</button></td>
+                    <td><button type="button" class="boton boton-rojo">🗑️</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <p>Copiright</p>
+        </div>
+    </footer>
 </body>
+
 </html>
