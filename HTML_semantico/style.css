@@ -58,30 +58,30 @@ form {
 }
 
 .boton-rojo {
-  background-color: red;
-  border-color: red;
+  background-color: #E74C3C; 
+  border-color: #E74C3C;
 }
 .boton-rojo:hover {
-  background-color: rgb(218, 3, 3);
-  border-color: rgb(218, 3, 3);
+  background-color: #C0392B; 
+  border-color: #C0392B;
 }
 .boton-amarillo {
-  background-color: yellow;
-  border-color: yellow;
+  background-color: #F1C40F; 
+  border-color: #F1C40F;
 }
 .boton-amarillo:hover {
-  background-color: rgb(218, 218, 0);
-  border-color: rgb(218, 218, 1);
+  background-color: #D4AC0D; 
+  border-color: #D4AC0D;
 }
 .boton-azul {
-  background-color: blue;
-  border-color: blue;
+  background-color: #3498DB; 
+  border-color: #3498DB;
   color: white;
   font-weight: bold;
 }
 .boton-azul:hover {
-  background-color: rgb(2, 2, 212);
-  border-color: rgb(2, 2, 212);
+  background-color: #2980B9; 
+  border-color: #2980B9;
 }
 
 .flex {
