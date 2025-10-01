@@ -6,11 +6,10 @@ html(lang="es")
         link(rel="stylesheet" href="style.css")
         title Pug Template 
     body 
-        header 
-            .contenedor
-                block title
-        main 
-            block content
-        footer 
-            .contenedor 
-                p Footer de la web
+        include header.pug
+        div.contenedor
+            main.main
+                block content
+            include aside.pug
+
+        include footer.pug

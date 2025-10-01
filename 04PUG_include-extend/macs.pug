@@ -1,0 +1,56 @@
+table.table
+    thead 
+        tr 
+            th MAC 
+            th Equipo 
+            th Nombre 
+            th Ciclo 
+            th Editar / Borrar
+    tbody 
+        tr 
+            td 14:D4:24:23:6D:42
+            td Portatil
+            td orwin
+            td DAW 1
+            td 
+                button(type="button").boton.boton-amarillo ✏️
+                button(type="button").boton.boton-rojo  🗑️
+        tr 
+            td 14:D4:24:23:6D:42
+            td Escritorio
+            td orwin
+            td DAW 1
+            td 
+                button(type="button").boton.boton-amarillo ✏️
+                button(type="button").boton.boton-rojo  🗑️
+        tr 
+            td 14:D4:24:23:6D:42
+            td Portatil
+            td orwin
+            td DAW 1
+            td 
+                button(type="button").boton.boton-amarillo ✏️
+                button(type="button").boton.boton-rojo  🗑️
+        tr 
+            td 14:D4:24:23:6D:42
+            td Escritorio
+            td orwin
+            td DAW 1
+            td 
+                button(type="button").boton.boton-amarillo ✏️
+                button(type="button").boton.boton-rojo  🗑️
+        tr 
+            td
+                input#mac(type="text" name="mac").form-input
+            td
+                input#name(type="text" name="equipo").form-input
+            td
+                input#name(type="text" name="name").form-input
+            td
+                select#ciclo(name="ciclo").form-select
+                    option(value="daw1") DAW 1
+                    option(value="daw2") DAW 2
+                    option(value="dam1") DAM 1
+                    option(value="dam2") DAM 2
+            td
+                input(type="submit" value="Enviar").boton.boton-azul

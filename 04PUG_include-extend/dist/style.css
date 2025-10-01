@@ -3,19 +3,19 @@ body {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-header,
-footer {
+.header,
+.footer {
   background-color: #2f2e2e;
   color: white;
   width: 100%;
 }
 
-header {
+.header {
   margin-bottom: 1rem;
   padding: 0.1rem 0;
 }
 
-footer {
+.footer {
   position: fixed;
   padding: 0.3rem 0;
   width: 100%;
@@ -28,26 +28,25 @@ footer {
   padding: 0 15px;
 }
 
-td,
-th,
-table {
+.table {
+  border-bottom: 0px transparent solid;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+.table th,
+.table td {
   border-bottom: 1px solid grey;
   border-collapse: collapse;
 }
-
-table {
-  border-bottom: 0px transparent solid;
-}
-
-th {
+.table th {
   padding: 0.8rem 0;
 }
-
-td {
+.table td {
   text-align: center;
   padding: 0.4rem;
 }
-td button {
+.table td button {
   display: inline-block;
 }
 
@@ -109,9 +108,26 @@ tr:hover {
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.548);
   background-color: transparent;
-  width: 55%;
+  width: 40%;
 }
 
 .form-select {
   background-color: transparent;
+}
+
+.aside {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+}
+.aside .aside-lista {
+  padding: 0;
+}
+.aside .aside-lista .aside-lista-element {
+  list-style: none;
+}
+
+.main {
+  width: 80%;
+  display: inline-block;
 }
