@@ -1,0 +1,222 @@
+doctype html
+html(lang="en" data-bs-theme="auto")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="")
+        meta(name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors")
+        meta(name="generator" content="Astro v5.13.2")
+        title Pricing example · Bootstrap v5.3
+        script(src="./js/color-modes.js") 
+        link(rel="stylesheet" href="../../bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="./css/pricing.css")
+        meta(name="theme-color" content="#712cf9")
+        link(rel="stylesheet" href="./css/dark.css")
+    body 
+        svg(xmlns="http://www.w3.org/2000/svg" class="d-none")
+            symbol( id="check2" viewBox="0 0 16 16")
+                path(d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z")
+            symbol(id="circle-half" viewBox="0 0 16 16")
+                path(d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z")
+            symbol(id="moon-stars-fill" viewBox="0 0 16 16")
+                path(d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z")
+                path(d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z")
+            symbol(id="sun-fill" viewBox="0 0 16 16")
+                path(d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z")
+        .dropdown.position-fixed.bottom-0.end-0.mb-3.me-3.bd-mode-toggle 
+            button#bd-theme(type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)").btn.btn-bd-primary.py-2.dropdown-toggle.d-flex.align-items-center 
+                svg(aria-hidden="true").bi.my-1.theme-icon-active
+                    use(href="#circle-half")
+                span#bd-theme-text.visually-hidden Toggle theme
+            ul(aria-labelledby="bd-theme-text").dropdown-menu.dropdown-menu-end.shadow
+                li 
+                    button(type="button" data-bs-theme-value="light" aria-pressed="false").dropdown-item.d-flex.align-items-center  
+                        svg(aria-hidden="true").bi.me-2.opacity-50
+                            use(href="#sun-fill")
+                        span Light
+                        svg( aria-hidden="true").bi.ms-auto.d-none 
+                            use(href="#check2")
+                li 
+                    button(type="button" data-bs-theme-value="dark" aria-pressed="false").dropdown-item.d-flex.align-items-center  
+                        svg(aria-hidden="true").bi.me-2.opacity-50
+                            use(href="#moon-stars-fill")
+                        span Dark
+                        svg( aria-hidden="true").bi.ms-auto.d-none 
+                            use(href="#check2")
+                li 
+                    button(type="button" data-bs-theme-value="light" aria-pressed="true").dropdown-item.d-flex.align-items-center.active
+                        svg(aria-hidden="true").bi.me-2.opacity-50
+                            use(href="#circle-half")
+                        span Auto
+                        svg( aria-hidden="true").bi.ms-auto.d-none 
+                            use(href="#check2")
+        svg(xmlns="http://www.w3.org/2000/svg").d-none
+            symbol#check(viewBox="0 0 16 16")
+                title Check 
+                path(d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z")
+        .container.py-3 
+            header 
+                .d-flex.flex-column.flex-md-row.align-items-center.pb-3.mb-4.border-bottom 
+                    a(href="/").d-flex.align-items-center.link-body-emphasis.text-decoration-none
+                        svg(xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 118 94" role="img").me-2
+                            title Bootstrap 
+                            path(fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor")
+                        span.fs-4 Pricing example 
+                    nav.d-inline-flex.mt-2.mt-md-0.ms-md-auto 
+                        a(href="#").me-3.py-2.link-body-emphasis.text-decoration-none Features
+                        a(href="#").me-3.py-2.link-body-emphasis.text-decoration-none Enterprise
+                        a(href="#").me-3.py-2.link-body-emphasis.text-decoration-none Support 
+                        a(href="#").py-2.link-body-emphasis.text-decoration-none Pricing 
+                .pricing-header.p-3.pb-md-4.mx-auto.text-center 
+                    h1.display-4.fw-normal.text-body-emphasis Pricing 
+                    p.fs-5.text-body-secondary Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+            main 
+                .row.row-cols-1.row-cols-md-3.mb-3.text-center
+                    .col
+                        .card.mb-4.rounded-3.shadow-sm 
+                            .card-header.py-3 
+                                h4.my-0.fw-normal Free 
+                            .card-body
+                                h1.card-title.pricing-card-title $0
+                                    small /mo
+                                ul.list-unstyled.mt-3.mb-4
+                                    li 10 users included
+                                    li 2 GB of storage
+                                    li Email support
+                                    li Help center access
+                                button(type="button").w-100.btn.btn-lg.btn-outline-primary Sign up for free
+                    .col
+                        .card.mb-4.rounded-3.shadow-sm 
+                            .card-header.py-3 
+                                h4.my-0.fw-normal Pro 
+                            .card-body
+                                h1.card-title.pricing-card-title $15
+                                    small /mo
+                                ul.list-unstyled.mt-3.mb-4
+                                    li 20 users included
+                                    li 10 GB of storage
+                                    li Priority email support
+                                    li Help center access
+                                button(type="button").w-100.btn.btn-lg.btn-primary Get started
+                    .col
+                        .card.mb-4.rounded-3.shadow-sm.border-primary
+                            .card-header.py-3.text-bg-primary.border-primary
+                                h4.my-0.fw-normal Enterprise 
+                            .card-body
+                                h1.card-title.pricing-card-title $29
+                                    small /mo
+                                ul.list-unstyled.mt-3.mb-4
+                                    li 30 users included
+                                    li 15 GB of storage
+                                    li Phone and email support
+                                    li Help center access
+                                button(type="button").w-100.btn.btn-lg.btn-primary Contact us
+                h2.display-6.text-center.mb-4 Compare plans
+                .table-responsive
+                    table.table.text-center 
+                        thead 
+                            tr 
+                                th(style="width: 34%")
+                                th(style="width: 22%") Free 
+                                th(style="width: 22%") Pro
+                                th(style="width: 22%") Enterprise
+                        tbody
+                            tr
+                                th(scope="row").text-start Public 
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                            tr 
+                                th(scope="row").text-start Private 
+                                td 
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                        tbody 
+                            tr
+                                th(scope="row").text-start Permissions 
+                                td
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                            tr
+                                th(scope="row").text-start Sharing 
+                                td
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                            tr
+                                th(scope="row").text-start Unlimited members 
+                                td
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+                            tr
+                                th(scope="row").text-start Extra security
+                                td
+                                td 
+                                td 
+                                    svg(width="24" height="24" role="img" aria-label="Included").bi
+                                        use(xlink:href="#check")
+            footer.pt-4.my-md-5.pt-md-5.border-top 
+                .row 
+                    .col-12.col-md  
+                        small.d-block.mb-3.text-body-secondary &copy; 2017–2025
+                    .col-6.col-md 
+                        h5 Features 
+                        ul.list-unstyled.text-small 
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Cool stuff
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Random fearure
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Team feature
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Stuff for developers
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Another one
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Last time
+                    .col-6.col-md 
+                        h5 Resources 
+                        ul.list-unstyled.text-small 
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Resource
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Resource name
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Another resource
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Final resource
+                    .col-6.col-md 
+                        h5 About
+                        ul.list-unstyled.text-small 
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Team
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Locations
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Privacy
+                            li.mb-1 
+                                a(href="#").link-secondary.text-decoration-none Terms
+        script(src="../../bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js") 
