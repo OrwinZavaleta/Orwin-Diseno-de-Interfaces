@@ -1,0 +1,75 @@
+:root {
+  background-color: #dfe1df;
+}
+
+.img-rounded {
+  border-radius: 12.5px;
+}
+
+.hero-container {
+  padding-top: 1rem;
+  max-height: 55rem;
+  overflow: hidden;
+  border-radius: 12.5px;
+}
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.brand {
+  padding-top: 1.5rem;
+  font-weight: bold;
+}
+
+header {
+  background-color: #d99abc;
+}
+
+footer {
+  background-color: #d99abc;
+}
+
+.cita {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  text-align: center;
+}
+
+.main-nav {
+  list-style: none;
+  /* text-align: right; */
+  display: flex;
+  justify-content: end;
+  margin-bottom: 0;
+  align-items: center;
+  gap: 2rem;
+}
+.main-nav li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.main-nav a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
