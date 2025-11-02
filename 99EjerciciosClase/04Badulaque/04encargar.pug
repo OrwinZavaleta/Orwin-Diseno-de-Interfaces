@@ -1,0 +1,80 @@
+extends layout.pug 
+
+block title 
+    | Encargar
+
+block content 
+    form(action="#" method="post") 
+        h3 Packs recomendados por El Fede
+        .row 
+            .two.columns.card 
+                h5 Pack 1
+            .two.columns.card 
+                h5 Pack 1
+            .two.columns.card 
+                h5 Pack 1
+            .two.columns.card 
+                h5 Pack 1
+            .two.columns.card 
+                h5 Pack 1
+            .two.columns.card 
+                h6 A tu gusto
+        h4 Packs personalizados 
+        .row 
+            .six.columns
+                label(for="fechaRecogida") Fecha de Recogida
+                    input#fechaRecogida(type="date", name="fechaRecogida").u-full-width
+        .row
+            .four.columns
+                label(for="chucheNombre") Chuche
+                    input#chucheNombre(type="text", name="chucheNombre").u-full-width
+            .four.columns
+                label(for="cantidad") Cantidad
+                    input#cantidad(type="number", name="cantidad").u-full-width
+            .four.columns
+                label &nbsp;
+                    button(type="button").button-primary.u-full-width Añadir
+
+        h4 Chuches en el pack
+        .row 
+            .five.columns 
+                p Chuche 1
+            .five.columns 
+                p 15 unidades
+            .two.columns 
+                button(type="button").u-full-width Eliminar
+        .row 
+            .five.columns 
+                p Chuche 1
+            .five.columns 
+                p 15 unidades
+            .two.columns 
+                button(type="button").u-full-width Eliminar
+        .row 
+            .five.columns 
+                p Chuche 1
+            .five.columns 
+                p 15 unidades
+            .two.columns 
+                button(type="button").u-full-width Eliminar
+    
+        h4 Datos de contacto
+        p Indícanos quién eres y cuándo necesitas el encargo. 
+        .row 
+            .four.columns
+                label(for="nombreUser") Nombre
+                    input#nombreUser(type="text", name="nombreUser").u-full-width
+            .four.columns
+                label(for="email") Correo
+                    input#email(type="email", name="email").u-full-width
+            .four.columns
+                label(for="fechaPrevista") Fecha prevista
+                    input#fechaPrevista(type="date", name="fechaPrevista").u-full-width
+        h4 Notas adicionales
+        .row 
+            .twelve.columns 
+                textarea#comentarios(name="comentarios").u-full-width
+
+        .row 
+            .twelve.columns 
+                button(type="submit").u-full-width.button-primary Solicitar encargo
