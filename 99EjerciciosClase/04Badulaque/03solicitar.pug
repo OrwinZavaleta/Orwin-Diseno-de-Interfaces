@@ -1,0 +1,53 @@
+extends layout.pug 
+
+block title 
+    | Bienvenidos 
+
+block content 
+    h3 ¿Qué chuches te gustaría ver en nuestra tienda?
+    form(action="#" method="post") 
+        h5 Contacto
+        .row 
+            .six.columns 
+                label(for="nombre") Nombre
+                    input#nombre(type="text" name="nombre").u-full-width
+            .six.columns 
+                label(for="correo") Correo
+                    input#correo(type="text" name="correo").u-full-width
+
+        h5 Detalles del chuche
+        .row
+            .four.columns 
+                label(for="tipo") Tipo 
+                    select#tipo(name="tipo").u-full-width
+                        option(value='') Selecciona
+                        option(value='chocolate') Chocolate
+                        option(value='gominola') Gominola
+                        option(value="caramelo") caramelo
+            .four.columns 
+                label(for="frecuencia") Frecuencia 
+                    select#tipo(name="frecuencia").u-full-width
+                        option(value='') Selecciona
+                        option(value='semanal') Diario
+                        option(value='semanal') Semanal
+                        option(value='mensual') Mensual
+            .four.columns 
+                label(for="preferencias") Preferencias
+                    select#tipo(name="preferencias").u-full-width
+                        option(value='') Selecciona
+                        option(value='vegano') Vegano
+                        option(value='sin-azucar') Sin azúcar
+        .row 
+            .six.columns 
+                label(for="nombre") Nombre del Chuche
+                    input#nombre(type="text" name="nombre").u-full-width
+            .six.columns 
+                label(for="marca") Marca del Chuche
+                    input#marca(type="text" name="marca").u-full-width
+        h5 Descripcion
+        .row 
+            .twelve.columns 
+                textarea#descripcion(name="descripcion").u-full-width Descripcion
+        .row
+            .twelve.columns 
+                input(type="submit" value="Enviar Petición").u-full-width.button-primary
