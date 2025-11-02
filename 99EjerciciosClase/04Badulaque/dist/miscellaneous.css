@@ -29,6 +29,7 @@
 .brand {
   padding-top: 1.5rem;
   font-weight: bold;
+  font-size: 3.5rem;
 }
 
 header {
@@ -52,15 +53,10 @@ footer {
 
 .main-nav {
   list-style: none;
-  /* text-align: right; */
   display: flex;
-  justify-content: end;
   margin-bottom: 0;
-  align-items: center;
-  gap: 2rem;
 }
 .main-nav li {
-  display: inline-block;
   margin-bottom: 0;
 }
 .main-nav a {
@@ -69,9 +65,18 @@ footer {
   color: black;
 }
 
+@media (min-width: 550px) {
+  .main-nav {
+    justify-content: end;
+  }
+  .main-nav .four.columns {
+    width: auto;
+  }
+}
 .vertical-align {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sub-amigos {

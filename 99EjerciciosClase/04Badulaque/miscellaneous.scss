@@ -31,6 +31,7 @@
 .brand {
   padding-top: 1.5rem;
   font-weight: bold;
+  font-size: 3.5rem;
 }
 
 header {
@@ -54,15 +55,13 @@ footer {
 
 .main-nav {
   list-style: none;
-  /* text-align: right; */
   display: flex;
-  justify-content: end;
+  // justify-content: end;
   margin-bottom: 0;
-  align-items: center;
-  gap: 2rem;
+  // align-items: center;
+  // gap: 2rem;
 
   li {
-    display: inline-block;
     margin-bottom: 0;
   }
 
@@ -73,12 +72,22 @@ footer {
   }
 }
 
+@media (min-width: 550px) {
+  .main-nav {
+    justify-content: end;
+    .four.columns{
+      width: auto;
+    }
+  }
+}
+
 .vertical-align {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.sub-amigos{
+.sub-amigos {
   padding-top: 1rem;
   text-align: center;
 }
