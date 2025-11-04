@@ -138,3 +138,16 @@ input[type="date"] {
   line-height: normal;
   margin-bottom: 1.5rem;
 }
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+
+  .copy {
+    font-size: 2.5rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

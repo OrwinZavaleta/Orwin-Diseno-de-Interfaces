@@ -1,8 +1,10 @@
 $font-color: rgb(63, 47, 62);
+
 :root {
   background-color: white;
 }
-body{
+
+body {
   color: $font-color;
 }
 
@@ -81,7 +83,8 @@ h2 {
     text-decoration: none;
     color: $font-color;
   }
-  :hover{
+
+  :hover {
     color: $font-color;
   }
 }
@@ -143,4 +146,17 @@ input[type="date"] {
   box-sizing: border-box;
   line-height: normal;
   margin-bottom: 1.5rem;
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+
+  .copy {
+    font-size: 2.5rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
 }

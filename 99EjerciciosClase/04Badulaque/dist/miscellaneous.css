@@ -125,3 +125,14 @@ input[type=date] {
   line-height: normal;
   margin-bottom: 1.5rem;
 }
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+}
+footer .copy {
+  font-size: 2.5rem;
+}
+footer .copy p {
+  margin-bottom: 0;
+}
