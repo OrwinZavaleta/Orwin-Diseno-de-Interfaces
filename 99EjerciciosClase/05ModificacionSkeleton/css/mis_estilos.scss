@@ -1,2 +1,61 @@
-@use "nav";
 @use "colores";
+@use "nav";
+@use "card";
+@use "form";
+@use "hero";
+
+header {
+    background-color: #d9b8c7;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem 1.5rem;
+    color: #4b433f;
+    // margin-bottom: 1rem;
+
+    h1 {
+        margin: 0;
+        font-weight: 400;
+    }
+}
+
+footer {
+    background-color: #d9b8c7;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem 1.5rem;
+    color: #4b433f;
+    margin-top: 1rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.pt-1 {
+    padding-top: 1.5rem;
+}
+
+.img-rounded {
+    border-radius: 12.5px;
+}
+
+.cita {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-weight: 700;
+}

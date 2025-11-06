@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   include head.pug
 
 </head>
@@ -9,17 +8,17 @@
   .container 
     .row  
       .twelve.columns  
-        header 
+        header
           h1 El badulaque
-    .row  
-      .two.columns  
-        ul.nav_vertical
-          li: a(href="/") Home
-          li: a(href="/about") About
-          li: a(href="/contact") Contact
+    .row.pt-1
+      .two.columns
+        nav
+          ul.nav_vertical.card
+            li: a(href="/") Amigos
+            li: a(href="/about") Peticiones
+            li: a(href="/contact") Encargos
       .ten.columns  
         block content
-        h1 Main content
     .row  
       .twelve.columns  
         footer 
