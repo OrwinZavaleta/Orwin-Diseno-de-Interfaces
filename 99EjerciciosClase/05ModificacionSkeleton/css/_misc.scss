@@ -1,0 +1,60 @@
+header {
+    background-color: --var(--color_principal);
+    border-radius: 0 0 15px 15px;
+    padding: 1rem 1.5rem;
+    color: --var(--color_cuaternario);
+    // margin-bottom: 1rem;
+
+    h1 {
+        margin: 0;
+        font-weight: 400;
+    }
+}
+
+footer {
+    background-color: --var(--color_principal);
+    border-radius: 15px 15px 0 0;
+    padding: 1rem 1.5rem;
+    color: --var(--color_cuaternario);
+    margin-top: 1rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.pt-1 {
+    padding-top: 1.5rem;
+}
+
+.img-rounded {
+    border-radius: 12.5px;
+}
+
+.cita {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-weight: 700;
+}
+
+.column,
+.columns {
+    margin: 0;
+}
