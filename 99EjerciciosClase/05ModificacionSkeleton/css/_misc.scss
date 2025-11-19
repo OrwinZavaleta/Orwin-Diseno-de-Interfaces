@@ -1,8 +1,8 @@
 header {
-    background-color: --var(--color_principal);
+    background-color: var(--color_principal);
     border-radius: 0 0 15px 15px;
     padding: 1rem 1.5rem;
-    color: --var(--color_cuaternario);
+    color: var(--color_cuaternario);
     // margin-bottom: 1rem;
 
     h1 {
@@ -12,10 +12,10 @@ header {
 }
 
 footer {
-    background-color: --var(--color_principal);
+    background-color: var(--color_principal);
     border-radius: 15px 15px 0 0;
     padding: 1rem 1.5rem;
-    color: --var(--color_cuaternario);
+    color: var(--color_cuaternario);
     margin-top: 1rem;
 
     p {

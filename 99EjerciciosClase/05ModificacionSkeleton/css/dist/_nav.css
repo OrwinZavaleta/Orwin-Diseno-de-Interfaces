@@ -6,7 +6,7 @@ ul.nav_horizontal {
   gap: 2rem;
   list-style: none;
   font-size: 2rem;
-  background-color: --var(--color_secundario);
+  background-color: var(--color_secundario);
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   border-radius: 10px;
@@ -21,7 +21,7 @@ ul.nav_horizontal li a {
 ul.nav_vertical {
   margin: 0;
   font-size: 2rem;
-  background-color: --var(--color_secundario);
+  background-color: var(--color_secundario);
   padding: 0.5rem 1rem 1.5rem;
   border: 1px grey solid;
   border-radius: 15px;
